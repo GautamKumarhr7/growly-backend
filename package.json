@@ -1,10 +1,10 @@
 {
   "name": "growly",
   "version": "1.0.0",
-  "main": "dist/server.js",
+  "main": "server.js",
   "scripts": {
     "build": "tsc",
-    "start": "node dist/server.js",
+    "start": "node server.js",
     "dev": "nodemon --ext ts --exec ts-node server.ts",
     "seed": "ts-node-dev db/seeds.ts",
     "migrate": "ts-node-dev db/migrations.ts",
