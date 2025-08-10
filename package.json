@@ -1,14 +1,15 @@
 {
   "name": "growly",
   "version": "1.0.0",
-  "main": "server.ts",
- "scripts": {
-  "build": "tsc",
-  "start": "node dist/server.js",
-  "dev": "nodemon --ext ts --exec ts-node server.ts",
-  "seed": "ts-node-dev db/seeds.ts",
-  "migrate": "ts-node-dev db/migrations.ts"
-},
+  "main": "dist/server.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "dev": "nodemon --ext ts --exec ts-node server.ts",
+    "seed": "ts-node-dev db/seeds.ts",
+    "migrate": "ts-node-dev db/migrations.ts",
+    "postinstall": "npm run build"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
